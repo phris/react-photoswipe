@@ -1,4 +1,5 @@
 # React PhotoSwipe
+***修复React PhotoSwipe的bug[https://github.com/minhtranite/react-photoswipe/pull/36]***
 
 PhotoSwipe, PhotoSwipeGallery component for ReactJS base on [PhotoSwipe](http://photoswipe.com/).
 
@@ -7,12 +8,12 @@ PhotoSwipe, PhotoSwipeGallery component for ReactJS base on [PhotoSwipe](http://
 ### NPM
 
 ```bash
-npm install --save react-photoswipe
+npm install --save react-photoswipe-node
 ```
 
 ### Bower
 ```bash
-bower install --save react-photoswipe
+bower install --save react-photoswipe-node
 ```
 
 ## Usage
@@ -22,13 +23,13 @@ bower install --save react-photoswipe
 #### With webpack:
 
 ```js
-import 'react-photoswipe/lib/photoswipe.css';
+import 'react-photoswipe-node/lib/photoswipe.css';
 ```
 
 #### Without webpack:
 
 ```html
-<link rel="stylesheet" type="text/css" href="path/to/react-photoswipe/lib/photoswipe.css">
+<link rel="stylesheet" type="text/css" href="path/to/react-photoswipe-node/lib/photoswipe.css">
 ```
 
 ### JS
@@ -36,7 +37,7 @@ import 'react-photoswipe/lib/photoswipe.css';
 #### PhotoSwipe
 
 ```js
-import {PhotoSwipe} from 'react-photoswipe';
+import {PhotoSwipe} from 'react-photoswipe-node';
 
 let isOpen = true;
 
@@ -70,7 +71,7 @@ handleClose = () => {
 #### PhotoSwipeGallery
 
 ```js
-import {PhotoSwipeGallery} from 'react-photoswipe';
+import {PhotoSwipeGallery} from 'react-photoswipe-node';
 
 let items = [
   {
@@ -105,8 +106,8 @@ getThumbnailContent = (item) => {
 ### UMD
 
 ```html
-<link rel="stylesheet" type="text/css" href="path/to/react-photoswipe/dist/photoswipe.css">
-<script src="path/to/react-photoswipe/dist/react-photoswipe.js"></script>
+<link rel="stylesheet" type="text/css" href="path/to/react-photoswipe-node/dist/photoswipe.css">
+<script src="path/to/react-photoswipe-node/dist/react-photoswipe.js"></script>
 ```
 
 ```js

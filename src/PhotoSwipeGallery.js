@@ -82,8 +82,10 @@ class PhotoSwipeGallery extends React.Component {
             <div
               key={index}
               ref={(node) => {
-                this.thumbnails = this.thumbnails || [];
-                this.thumbnails[index] = node;
+                if (node) {
+                  this.thumbnails = this.thumbnails || [];
+                  this.thumbnails[index] = node;
+                }
               }}
               className="pswp-thumbnail"
               onClick={this.showPhotoSwipe(index)}
